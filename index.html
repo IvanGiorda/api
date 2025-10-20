@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decodificador de VIN - API</title>
+</head>
+<body>
+  <p>Ingresá el VIN del vehículo</p>
+
+  <input type="text" id="vin" placeholder="Ejemplo: 5UXWX7C5BA">
+  <input type="number" id="year" placeholder="Año (opcional)">
+  <button id="buscar">Buscar</button>
+
+  <div id="error"></div>
+
+  <table id="tabla" style="display:none;">
+    <thead>
+      <tr>
+        <th>Campo</th>
+        <th>Valor</th>
+      </tr>
+    </thead>
+    <tbody id="tabla-body"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
